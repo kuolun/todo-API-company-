@@ -17,6 +17,7 @@ app.get('/', function (req, res) {
     res.send('Todo API Root');
 });
 
+//get todos
 app.get('/todos', function (req, res) {
     res.json(todos);
 });
@@ -83,7 +84,7 @@ app.delete('/todos/:id', function (req, res) {
     }
 });
 
-//listen port
+//listen port 
 app.listen(PORT, function () {
     console.log('Express listening on port ' + PORT + '!');
 });
